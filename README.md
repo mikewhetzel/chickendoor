@@ -54,8 +54,6 @@ chmod +x /home/pi/chickendoor/sunrise.py
 chmod +x /home/pi/chickendoor/sunset.py
 ```
 
-I don't believe there should be any permission issues, but it may be necessary to do a chmod command to the chickendoor directory and/or the individual scripts if things aren't working properly.
-
 Now, the timed raising and lowering of the door should be working. The timing can be modified by changing the offset of the heliocron command in the sunrise.sh and sunset.sh scripts, as described in the heliocron documentation. It's easiest to test the scripts by doing a ```heliocron report``` command, comparing the current time to the time of sunrise or sunset in the heliocron report, and adjusting the offset in the shell scripts accordingly.
 
 Happy chickening!
