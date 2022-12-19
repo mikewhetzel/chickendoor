@@ -35,7 +35,7 @@ Edit the Pi's system-wide crontab using the command ```sudo crontab -e```. We ne
 Add the following to the end of the root user crontab in order to reboot every morning at 3am:
 ```0 3 * * * /sbin/shutdown -r now```
 
-Now, save and exit the editor to save your crontab changes.
+Now, save and exit the editor.
 
 The next thing we need to do is tell the Pi to run both the sunrise.sh and sunset.sh shell scripts every time the Pi reboots. The shell scripts will tell the Pi to wait until 23 minutes after sunrise, and then run the sunrise.py Python script to open the door. Similarly, it will do the same 23 minutes after sunset with the sunset.py script to close the door after sunset.
 
