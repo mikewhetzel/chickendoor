@@ -56,4 +56,4 @@ chmod +x /home/pi/chickendoor/sunset.py
 
 Now, the timed raising and lowering of the door should be working. The timing can be modified by changing the offset of the heliocron command in the sunrise.sh and sunset.sh scripts, as described in the heliocron documentation. It's easiest to test the scripts by doing a ```heliocron report``` command, comparing the current time to the time of sunrise or sunset in the heliocron report, and adjusting the offset in the shell scripts accordingly.
 
-Happy chickening!
+Happy chickening! Or, whatever else this may be useful for!
