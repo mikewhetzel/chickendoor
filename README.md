@@ -1,5 +1,5 @@
 # chickendoor
-Two shell scripts that trigger individual Python scripts to control a relay-driven 12v motor to raise and lower an automated chicken coop door based on sunset/sunrise times calculated by heliocron (https://github.com/mfreeborn/heliocron).
+Two shell scripts that trigger two Python scripts to control a relay-driven 12v motor to raise and lower an automated chicken coop door based on sunset/sunrise times calculated by heliocron (https://github.com/mfreeborn/heliocron).
 
 My chicken door Pi is connected to Wifi, but this system should work offline as long as the system date and clock remain accurate.
 
