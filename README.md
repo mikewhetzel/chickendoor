@@ -1,4 +1,6 @@
 # chickendoor
+I used a Pi3B for my chicken door project, though I'm sure it could be adapted to other devices.
+
 Two shell scripts that trigger two Python scripts to control a relay-driven 12v motor to raise and lower an automated chicken coop door. Timing is based on sunset/sunrise times calculated by heliocron (https://github.com/mfreeborn/heliocron).
 
 My chicken door Pi is connected to Wifi, but this system should work offline as long as the system date and clock remain accurate.
@@ -7,8 +9,6 @@ Standard mechanical limit switches and scripted logic prevent most if not all po
 My limit switches are wired in the normally-closed position so that voltage is always present unless the switch is interrupted. This ensures that a loose wire, short-circuit, etc. will prevent the motor from operating. I used two 3.3v output pins from the Pi, wired into two GPIO input pins for the limit switches.
 
 Logging is also implemented to keep track of door activity.
-
-I used a Pi3B for my chicken door project, though I'm sure it could be adapted to other devices.
 
 # Prerequisites: 
 A Raspberry Pi with heliocron installed - I used the rust/cargo method to install heliocron on my Pi.
