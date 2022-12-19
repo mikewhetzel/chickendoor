@@ -30,7 +30,7 @@ Pins 35 and 37 are wired to the 12v motor relay + and - terminals. Pin 11 is the
 # Setup:
 We want to set up the Pi to reboot every morning at 3am, in order to run a new instance of the scripts each day. I accomplished this by using the crontab, a good way to run scheduled jobs on a Pi.
 
-Edit the Pi's system-wide crontab using the command ```sudo crontab -e```. 
+Edit the Pi's system-wide crontab using the command ```sudo crontab -e```. We need root user permission here in order to reboot the whole system.
 
 Add the following to the end of the root user crontab in order to reboot every morning at 3am:
 ```0 3 * * * /sbin/shutdown -r now```
