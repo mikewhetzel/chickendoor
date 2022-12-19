@@ -37,7 +37,7 @@ Add the following to the end of the root user crontab in order to reboot every m
 
 Now, save and exit the editor to save your crontab changes.
 
-The next thing we need to do is tell the Pi to run both the sunrise.sh and sunset.sh shell scripts every time the Pi reboots. This will tell the Pi to wait until 23 minutes after sunrise, and then run the sunrise.py Python script. Similarly, it will do the same 23 minutes after sunset with the sunset.py script.
+The next thing we need to do is tell the Pi to run both the sunrise.sh and sunset.sh shell scripts every time the Pi reboots. The shell scripts will tell the Pi to wait until 23 minutes after sunrise, and then run the sunrise.py Python script. Similarly, it will do the same 23 minutes after sunset with the sunset.py script.
 
 To do this, I added the following two lines to the end of the pi user crontab with the command ```crontab -e```:
 
