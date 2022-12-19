@@ -54,6 +54,8 @@ chmod +x /home/pi/chickendoor/sunrise.py
 chmod +x /home/pi/chickendoor/sunset.py
 ```
 
+Ensure that the two Python scripts will run from a command-line to test the door going up and down. Then, make sure the shell scripts will run as the Pi user. If not, you may need to modify the permissions of the chickendoor directory and the individual scripts using the chmod command. Once all of the scripts will run, you should be good to reboot and as long as the system clock and date are accurate, the system will work on its own.
+
 Now, the timed raising and lowering of the door should be working. The timing can be modified by changing the offset of the heliocron command in the sunrise.sh and sunset.sh scripts, as described in the heliocron documentation. It's easiest to test the scripts by doing a ```heliocron report``` command, comparing the current time to the time of sunrise or sunset in the heliocron report, and adjusting the offset in the shell scripts accordingly.
 
 Happy chickening! Or, whatever else this may be useful for!
